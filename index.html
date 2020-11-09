@@ -1,57 +1,50 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>🏫 Index des TP</title>
+<!DOCTYPE html>
+<html lang=en>
+     <head>
+	   <meta charset="UTF-8">
+	   <link rel="stylesheet" type="text/css" href="pagecss.css" />
+           
+        <title>index.html</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="main.js"></script>-->
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <script type="text/javascript" src="form.js"></script>
     </head>
-    <body>        
-        <h1>🏫 Page d'index des TP 🎒</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello ☀️️</p>
-        <img src="galilee.png" alt="Logo Galilee"/>
-      
-      <ul>
-        <li>
-          <a href="tp1/index.html">/TP1</a>
-        </li>
-        <li>
-          <a href="tp2/index.html">/TP2</a>
-        </li>
-        <li>
-          <a href="tp3/index.html">/TP3</a>
-        </li>
-        <li>
-          <a href="tp4/index.html">/TP4</a>
-        </li>
-        <li>
-          <a href="tp5/index.html">/TP5</a>
-        </li>
-        <li>
-          <a href="tp6/index.html">/TP6</a>
-        </li>
-        <li>
-          <a href="tp7/index.html">/TP7</a>
-        </li>
-      </ul>
-    </body>
-</html>
+  
+          <body>
+          	
+    	     
+            <form>
+            	 <h1>Saisie d'une fiche "Personne"</h1>
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom"  name="nom" maxlength="20" placeholder="ex=dodos"  class="inputAW"><br>
+                              
+
+                  
+                    <label for="prénom">Prénom</label>
+                    <input type="text" id="prénom" name="prénom" maxlength="20" placeholder="johny"  class="inputAW"> <br>
+           
+
+                    <label for="date">Date</label>
+                    <input placeholder="JJ/MM/AAAA"  type ="date" name=date id="date"  class="inputAW"> <br>
+              
+                    <label for="adresse">Adresse</label>
+                    <input type="text" id="adresse" name="adresse"  maxlength="50"placeholder="Paris"  class="inputAW"> <br>
+                    
+        
+                           
+
+                    <label for="email">Mail</label>
+                    <input type="email" id="email" name="email" maxlength="30"placeholder="aaa@gg.fr" class="inputAW" ><br>
+                     
+
+                    <input type="button" value="Valider" onclick="validation()"> 
+            </form>
+                     	    
+                     	<div id="error"></div>
+                        <div id="resultat"></div>
+                          
+                    
+       	
+         </body>
+    </html>   
